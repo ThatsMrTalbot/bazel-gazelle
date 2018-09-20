@@ -14,7 +14,7 @@ go_library(
         "value.go",
     ],
     importpath = "github.com/bazelbuild/bazel-gazelle/internal/rule",
-    visibility = ["//:__subpackages__"],
+    visibility = ["//visibility:public"],
     deps = [
         "//internal/label:go_default_library",
         "//vendor/github.com/bazelbuild/buildtools/build:go_default_library",
